@@ -1,0 +1,79 @@
+.Programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    .programs__header{
+        display: flex;
+        gap: 3rem;
+        font-weight: bold;
+        font-size: 3rem;
+        justify-content: center;
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+        @media screen and (max-width: 1150px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width: 968px) {
+            margin-top: 2rem;
+        }
+        @media screen and (max-width: 820px) {
+            gap: 1rem;
+            font-size: 1.7rem;
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 1rem;
+            font-size: x-large;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+    .program__categories{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        @media screen and (max-width: 968px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 600px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .category{
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            padding: 2rem;
+            gap: 1rem;
+            color: white;
+            justify-content: space-between;
+            &:hover{
+                background: var(--planCard);
+                cursor: pointer;
+            }
+            .img{
+                width: 2rem;
+                height: 2rem;
+                fill: white;
+            }
+            .head{
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .detail{
+                font-size: 0.9rem;
+                line-height: 25px;
+            }
+            .join__now{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                img{
+                    width: 1rem;
+                }
+            }
+        }
+    }
+}

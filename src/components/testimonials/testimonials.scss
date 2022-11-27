@@ -1,0 +1,124 @@
+.Testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+    // @media screen and (max-width: 800px) {
+    //     flex-direction: column;
+    // }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+    .left__t{
+        display: flex;
+        flex: 1 1;
+        gap: 2rem;
+        flex-direction: column;
+        text-transform: uppercase;
+        color: white;
+        .one{
+            color: var(--orange);
+            font-weight: bold;
+        }
+        .two{
+            font-weight: bold;
+            font-size: 3rem;
+            @media screen and (max-width: 800px) {
+             font-size: xx-large;   
+            }
+        }
+        .text{
+            text-transform: none;
+            text-align: justify;
+            letter-spacing: 2px;
+            line-height: 40px;
+            @media screen and (max-width: 800px) {
+                font-size: xx-large;
+            }
+            @media screen and (max-width: 500px) {
+                font-size: 16px;
+            }
+        }
+    }  
+    
+    .right__t{
+        flex: 1;
+        position: relative;
+        @media screen and (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;       
+        }
+        .one_div{
+            position: absolute;
+            width: 17rem;
+            height: 20rem;
+            border: 2px solid orange;
+            background-color: transparent;
+            // right: 9rem;
+            right: 6rem;
+            top: 0.9rem;
+            @media screen and (max-width: 991px) {
+                right: 3rem;
+            }
+            @media screen and (max-width: 800px) {
+                // position: relative;
+                display: none;   
+            }
+        }
+        .two_div{
+            position: absolute;
+            width: 17rem;
+            height: 19rem;
+            // right: 7rem;
+            right: 3.8rem;
+            top: 4rem;
+            background: var(--planCard);
+            @media screen and (max-width: 991px) {
+                right: 1rem;
+            }
+            @media screen and (max-width: 800px) {
+                // position: relative;
+                display: none;   
+            }
+        }
+        .right__img{
+            position: absolute;
+            width: 17rem;
+            height: 20rem;
+            object-fit: cover;
+            // right: 8rem;
+            right: 5rem;
+            top: 2rem;
+            @media screen and (max-width: 991px) {
+                right: 2rem;
+            }
+            @media screen and (max-width: 800px) {
+                top: 0;
+                right: 0;
+                position: relative;
+                align-self: center;   
+            }
+        }
+        .arrows{
+            display: flex;
+            gap: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 3rem;
+            @media screen and (max-width: 900px) {
+                left: 0;
+            }
+            @media screen and (max-width: 490px) {
+                // display: block;
+                bottom: -2rem;
+                // left: 0;   
+            }
+            img{
+                width: 1.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
